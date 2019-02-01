@@ -2,7 +2,7 @@
 
 Goavro is a library that encodes and decodes Avro data.
 
-This repo is a fork of linkedin goavro with two fixes to canonical schemas.
+This repo is a fork of linkedin goavro with two fixes to canonical schemas. These fixes were needed for correct fingerprint calculation.
 
 The first fix propagates the namespace of parent to subtypes, i.e., child nodes inside the "fields" that
 are of type "record".
